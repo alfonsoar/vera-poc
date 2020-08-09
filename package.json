@@ -3,7 +3,7 @@
   "private": true,
   "description": "A simple POC for Vera's ITP 2.0 Project",
   "version": "0.1.0",
-  "homepage": "https://agar23.github.io/vera-poc",
+  "homepage": "https://alfonsoar.github.io/vera-poc",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
