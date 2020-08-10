@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "gatsby": "^2.24.37",
+    "highcharts": "^8.1.2",
+    "highcharts-react-official": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
