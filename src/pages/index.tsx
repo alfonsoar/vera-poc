@@ -65,7 +65,7 @@ const mapOptions = {
     map: "countries/us/custom/us-all-mainland",
   },
   title: {
-    text: "test"
+    text: "United States"
   },
   mapNavigation: {
     enabled: true,
