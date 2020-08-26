@@ -64,6 +64,9 @@ const mapOptions = {
   chart: {
     map: "countries/us/custom/us-all-mainland",
   },
+  title: {
+    text: "USA"
+  },
   mapNavigation: {
     enabled: true,
     buttonOptions: {
