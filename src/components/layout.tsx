@@ -7,20 +7,24 @@ import "./layout.css";
 import { Header } from "./header";
 
 /** 
- * 
+ * The "Theme" object used for the application. Any changes made here will 
+ * apply to the whole site/components. For more details please see: 
+ * https://github.com/grommet/grommet/wiki/Grommet-v2-theming-documentation
 */
 const veraTheme = {
   global: {
     colors: {
       veraGray4: '#231F20',
       veraRed: '#EF4136',
-      veraWhite: "#FFFFFF"
+      veraWhite: "#FFFFFF",
+      veraText: '#4E4E55;'
     },
   },
   select: {
     icons: {
       color: "white",
-      down: <CaretDownFill/>
+      down: <CaretDownFill/>,
+      margin: "0"
     },
   }
 };
@@ -35,10 +39,6 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
     <Grommet
       theme={veraTheme}
       full
-      style={{
-        display: "flex",
-        flexDirection: "column",
-      }}
     >
       <Header />
       <Box as="main" pad="medium" flex overflow="auto">

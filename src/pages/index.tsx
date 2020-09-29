@@ -1,27 +1,34 @@
 import React from "react"
+import { Paragraph, Box } from "grommet"
+import styled from "styled-components"
+import { Layout, SEO, MainHeading, MapChart, MapFilter } from "../components"
 
-import Link from "../components/link"
-import { Box, Heading, Paragraph, TextInput } from "grommet"
-
-import { Layout } from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import { FormSearch } from 'grommet-icons';
-import MapChart from "../components/map-chart";
+const StyledParagraph = styled(Paragraph)`
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  padding-top: 50px;
+`
 
 /**
- * 
+ * The main Landing page of the site
  */
 const IndexPage = () => (
   <Layout>
-    {/* <SEO title="Home" /> */}
-    {/* <Heading>Hi people</Heading>
-    <Paragraph>Welcome to your new Gatsby site.</Paragraph>
-    <Paragraph>Now go build something great.</Paragraph>
-    <Box width={{ max: "300px" }} pad="small">
-      <Image />
-    </Box>
-    <Link to="/page-2/">Go to page 2</Link> */}
+    <SEO title="vera-poc" />
+    <MainHeading />
+    <StyledParagraph margin="none" alignSelf="center" color="veraText" fill>
+      In aliquam, mauris id commodo dictum, ipsum augue sollicitudin augue, quis
+      auctor dui purus id eros. Aliquam porttitor auctor mauris, non pulvinar
+      urna varius eget. Suspendisse potenti. Nunc a porttitor ex. Mauris eu nibh
+      ut elit elementum aliquam. Morbi nunc dolor, bibendum in dapibus a,
+      suscipit ac lorem
+    </StyledParagraph>
+    <MapFilter />
+    <MapChart />
   </Layout>
 )
 
