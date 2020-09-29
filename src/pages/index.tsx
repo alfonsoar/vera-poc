@@ -1,5 +1,5 @@
 import React from "react"
-import { Paragraph, Box } from "grommet"
+import { Paragraph } from "grommet"
 import styled from "styled-components"
 import { Layout, SEO, MainHeading, MapChart, MapFilter } from "../components"
 
