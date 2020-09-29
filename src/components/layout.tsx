@@ -1,5 +1,7 @@
 import React from "react";
 import { Grommet, Box } from "grommet";
+import { CaretDownFill } from "grommet-icons"
+
 
 import "./layout.css";
 import { Header } from "./header";
@@ -11,9 +13,16 @@ const veraTheme = {
   global: {
     colors: {
       veraGray4: '#231F20',
-      veraRed: '#EF4136'
+      veraRed: '#EF4136',
+      veraWhite: "#FFFFFF"
     },
   },
+  select: {
+    icons: {
+      color: "white",
+      down: <CaretDownFill/>
+    },
+  }
 };
 
 /**
