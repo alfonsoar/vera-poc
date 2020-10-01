@@ -10,9 +10,8 @@ const StyledParagraph = styled(Paragraph)`
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 3.125rem;
 `
-
 /**
  * The main Landing page of the site
  */

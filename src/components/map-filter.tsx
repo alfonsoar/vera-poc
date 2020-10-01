@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Select, Grid } from "grommet"
+import { Box, Select, ResponsiveContext } from "grommet"
 import styled from "styled-components"
 
 const StyledBox = styled(Box)`
@@ -16,6 +16,8 @@ const StyledSelect = styled(Select)`
  * Renders the main heading for the page
  */
 export function MapFilter() {
+  const size = React.useContext(ResponsiveContext)
+
   return (
     <StyledBox alignSelf="center" direction="row">
       <StyledSelect
@@ -35,22 +37,26 @@ export function MapFilter() {
         placeholder="Turna varius"
         alignSelf="center"
       />
-      <StyledSelect
-        options={["option 1", "option 2", "option 3"]}
-        placeholder="Varius"
-        alignSelf="center"
-      />
+      {size !== "small" && (
+        <>
+          <StyledSelect
+            options={["option 1", "option 2", "option 3"]}
+            placeholder="Varius"
+            alignSelf="center"
+          />
 
-      <StyledSelect
-        options={["option 1", "option 2", "option 3"]}
-        placeholder="Porttitor"
-        alignSelf="center"
-      />
-      <StyledSelect
-        options={["option 1", "option 2", "option 3"]}
-        placeholder="Dapibus"
-        alignSelf="center"
-      />
+          <StyledSelect
+            options={["option 1", "option 2", "option 3"]}
+            placeholder="Porttitor"
+            alignSelf="center"
+          />
+          <StyledSelect
+            options={["option 1", "option 2", "option 3"]}
+            placeholder="Dapibus"
+            alignSelf="center"
+          />
+        </>
+      )}
     </StyledBox>
   )
 }
