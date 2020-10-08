@@ -19,7 +19,7 @@ const StyledBox = styled(Box)`
 export function MainHeading(props: BoxProps) {
   return (
     <StyledBox alignSelf="center" gap="none" {...props}>
-      <StyledHeading color="veraText">Hello World!</StyledHeading>
+      <StyledHeading color="veraText">Hello Jared!</StyledHeading>
     </StyledBox>
   )
 }
